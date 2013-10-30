@@ -1,5 +1,5 @@
-(defproject com.infectiousmedia/protobuf "0.8.2-SNAPSHOT"
-  :description "Clojure-protobuf provides a clojure interface to Google's protocol buffers. Forked from Flatland to work with protobuf without extensions"
+(defproject org.flatland/protobuf "0.8.2-SNAPSHOT"
+  :description "Clojure-protobuf provides a clojure interface to Google's protocol buffers."
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :url "https://github.com/vrih/clojure-protobuf"
