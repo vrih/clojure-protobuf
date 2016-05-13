@@ -390,7 +390,7 @@ public class PersistentProtocolBufferMap extends APersistentMap implements IObj 
   }
 
   protected Object fromProtoValue(Descriptors.FieldDescriptor field, Object value) {
-    return fromProtoValue(field, value, true);
+    return fromProtoValue(field, value, false);
   }
 
   static Keyword k_key = Keyword.intern("key");
@@ -710,12 +710,12 @@ public class PersistentProtocolBufferMap extends APersistentMap implements IObj 
 
   @Override
   public Object valAt(Object key) {
-    return getValAt(key, true);
+    return getValAt(key, false);
   }
 
   @Override
   public Object valAt(Object key, Object notFound) {
-    return getValAt(key, notFound, true);
+    return getValAt(key, notFound, false);
   }
 
   public Object getValAt(Object key, boolean use_extensions) {
